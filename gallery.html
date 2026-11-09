@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#0b0912" name="theme-color"/>
+<title>NEXUS — Gallery</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="dashboard.html"><span class="brand-mark">N</span><span class="brand-name">NEXUS</span></a>
+<div class="sidebar-scroll">
+<p class="nav-label">WORKSPACE</p>
+<a class="nav-item active" href="dashboard.html"><span>⌂</span><b>Dashboard</b></a>
+<a class="nav-item" href="feed.html"><span>◉</span><b>Community feed</b></a>
+<a class="nav-item" href="gallery.html"><span>▧</span><b>Gallery</b></a>
+<a class="nav-item" href="messages.html"><span>✉</span><b>Messages</b><i class="nav-count">3</i></a>
+<p class="nav-label">GAMING</p>
+<a class="nav-item" href="games.html"><span>🎮</span><b>Games</b></a>
+<a class="nav-item" href="servers.html"><span>◈</span><b>Servers</b></a>
+<a class="nav-item" href="teams.html"><span>♟</span><b>Teams &amp; squads</b></a>
+<a class="nav-item" href="tournaments.html"><span>⚔</span><b>Tournaments</b></a>
+<a class="nav-item" href="leagues.html"><span>♛</span><b>Leagues</b></a>
+<a class="nav-item" href="leaderboard.html"><span>🏆</span><b>Leaderboard</b></a>
+<p class="nav-label">PERSONAL</p>
+<a class="nav-item" href="friends.html"><span>♧</span><b>Friends</b></a>
+<a class="nav-item" href="notifications.html"><span>♢</span><b>Notifications</b></a>
+<a class="nav-item" href="profile.html"><span>◉</span><b>My profile</b></a>
+<a class="nav-item" href="settings.html"><span>⚙</span><b>Settings</b></a>
+<div class="server-shortcuts">
+<p class="nav-label">YOUR SERVERS <button class="tiny-add" id="quickCreateServer" title="Create server">+</button></p>
+<button class="server-shortcut" data-server="Gaming Hub"><i class="server-orb purple"></i> Gaming Hub</button>
+<button class="server-shortcut" data-server="Pro Players"><i class="server-orb gold"></i> Pro Players</button>
+<button class="server-shortcut" data-server="Friends Zone"><i class="server-orb blue"></i> Friends Zone</button>
+</div>
+</div>
+<div class="sidebar-user">
+<div class="mini-avatar" id="sidebarAvatar">N</div>
+<div class="user-meta"><strong id="sidebarName">NEXUS Player</strong><small><span class="online-dot"></span> Demo account</small></div>
+<a aria-label="Settings" class="icon-button" href="settings.html">⚙</a>
+</div>
+</aside>
+<main class="main-area">
+<header class="topbar">
+<div class="topbar-left">
+<button aria-label="Toggle sidebar" class="icon-button menu-toggle" id="menuToggle">☰</button>
+<div class="breadcrumb"><span>NEXUS</span><span class="crumb-sep">/</span><strong id="pageTitle">Dashboard</strong></div>
+</div>
+<div class="topbar-right">
+<label class="search-wrap"><span>⌕</span><input id="globalSearch" placeholder="Search NEXUS..." type="search"/></label>
+<a aria-label="Notifications" class="icon-button notification-button" href="notifications.html">♢<i></i></a>
+<a class="top-profile" href="profile.html"><span class="top-avatar" id="topAvatar">N</span><span class="top-profile-name" id="topName">Player</span></a>
+</div>
+</header>
+<div class="page-container">
+<!-- DASHBOARD -->
+<section class="page" data-title="Dashboard" id="dashboard">
+<div class="hero-panel">
+<div class="hero-content">
+<span class="eyebrow"><span class="pulse"></span> YOUR GAMING UNIVERSE</span>
+<h1>PLAY TOGETHER.<br/><span class="gradient-text">RISE TOGETHER.</span></h1>
+<p>Find your squad, share your best moments and climb the competitive ranks. Your next level starts here.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="tournaments.html">Explore tournaments <span>↗</span></a><a class="btn btn-glass" href="servers.html">Find a server</a></div>
+</div>
+<div aria-hidden="true" class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-emblem">N</div><span class="spark spark-one">✦</span><span class="spark spark-two">✧</span></div>
+<div class="hero-bottom"><span>SEASON 01 · THE AWAKENING</span><span>CONNECT <b>•</b> COMPETE <b>•</b> CONQUER</span></div>
+</div>
+<div class="section-heading"><div><span class="eyebrow">YOUR OVERVIEW</span><h2>Command center</h2></div><span class="live-tag"><i></i> DEMO DATA</span></div>
+<div class="stats-grid">
+<article class="stat-card"><div class="stat-top"><span class="stat-icon violet">♧</span><span class="stat-trend">+12%</span></div><strong>1,250</strong><small>Community members</small></article>
+<article class="stat-card"><div class="stat-top"><span class="stat-icon gold">🎮</span><span class="stat-trend">+8%</span></div><strong>48</strong><small>Games tracked</small></article>
+<article class="stat-card"><div class="stat-top"><span class="stat-icon pink">🏆</span><span class="stat-trend">LIVE</span></div><strong>12</strong><small>Active competitions</small></article>
+<article class="stat-card"><div class="stat-top"><span class="stat-icon blue">⚡</span><span class="stat-trend">+240 XP</span></div><strong id="dashboardXP">2,450</strong><small>Your experience points</small></article>
+</div>
+<div class="dashboard-columns">
+<div class="panel"><div class="panel-heading"><div><span class="eyebrow">WHAT'S HAPPENING</span><h2>Community feed</h2></div><a class="text-link" href="feed.html">View all ↗</a></div><div class="feed-list" id="dashboardFeed"></div></div>
+<div class="side-stack">
+<div class="panel"><div class="panel-heading"><div><span class="eyebrow">UP NEXT</span><h2>Featured event</h2></div><span class="live-tag">SOON</span></div><div class="event-feature"><div class="event-art">⚔</div><div><strong>NEXUS Clash Cup</strong><p>Squad battle · Open entry</p><small>Starts in 2 days</small></div></div><a class="btn btn-purple full-width" href="tournaments.html">View event</a></div>
+<div class="panel mini-leaderboard"><div class="panel-heading"><div><span class="eyebrow">TOP PLAYERS</span><h2>Hall of fame</h2></div><a class="text-link" href="leaderboard.html">All ↗</a></div><div id="miniLeaderboard"></div></div>
+</div>
+</div>
+</section>
+<!-- FEED -->
+<section class="page" data-title="Community feed" id="feed">
+<div class="page-intro"><div><span class="eyebrow">THE COMMUNITY</span><h1>Community <span class="gradient-text">feed</span></h1><p>Share clips, celebrate wins and meet players.</p></div><span class="live-tag">PUBLIC DEMO FEED</span></div>
+<div class="content-narrow">
+<div class="panel composer"><div class="composer-top"><div class="mini-avatar">N</div><textarea id="postText" placeholder="What’s happening in your gaming world?" rows="2"></textarea></div><div class="composer-bottom"><span>✦ Keep it friendly. Play fair.</span><button class="btn btn-gold" id="publishPost">Publish post ↗</button></div></div>
+<div class="feed-list" id="communityFeed"></div>
+</div>
+</section>
+<!-- GALLERY -->
+<section class="page active" data-title="Gallery" id="gallery">
+<div class="page-intro"><div><span class="eyebrow">MOMENTS WORTH SHARING</span><h1>Gaming <span class="gradient-text">gallery</span></h1><p>Upload screenshots and keep your best gaming memories together.</p></div></div>
+<div class="panel upload-panel"><div class="upload-symbol">▧</div><div><h3>Drop your moment into NEXUS</h3><p>Choose an image from your device. Demo uploads stay in this browser only.</p><label class="btn btn-purple file-label">Choose image<input accept="image/*" hidden="" id="imageUpload" multiple="" type="file"/></label></div></div>
+<div class="gallery-toolbar"><h2>Your collection</h2><span class="muted" id="galleryCount">3 moments</span></div>
+<div class="gallery-grid" id="galleryGrid">
+<article class="gallery-card"><img alt="Esports gaming setup" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"/><div class="gallery-caption"><strong>Game night energy</strong><span>Community highlight</span></div></article>
+<article class="gallery-card"><img alt="Gaming station" src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800"/><div class="gallery-caption"><strong>Battle station</strong><span>Setup inspiration</span></div></article>
+<article class="gallery-card"><img alt="Gaming desk" src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=800"/><div class="gallery-caption"><strong>Ready for ranked</strong><span>Player setup</span></div></article>
+</div>
+</section>
+<!-- MESSAGES -->
+<section class="page" data-title="Messages" id="messages">
+<div class="page-intro"><div><span class="eyebrow">STAY CONNECTED</span><h1>Your <span class="gradient-text">messages</span></h1><p>A preview of the NEXUS direct-message space.</p></div></div>
+<div class="panel empty-state"><div class="empty-icon">✉</div><h2>Private chats are coming online</h2><p>After database connection, you’ll be able to message friends, share invites and create group conversations.</p><a class="btn btn-purple" href="friends.html">Find players</a></div>
+</section>
+<!-- GAMES -->
+<section class="page" data-title="Games" id="games">
+<div class="page-intro"><div><span class="eyebrow">CHOOSE YOUR BATTLEFIELD</span><h1>Game <span class="gradient-text">hub</span></h1><p>Explore supported games and open their competitive spaces.</p></div><button class="btn btn-gold" id="suggestGame">＋ Suggest a game</button></div>
+<div class="game-grid">
+<article class="game-card game-bg-one"><div class="game-symbol">🎯</div><div><span class="game-type">TACTICAL SHOOTER</span><h3>Valorant</h3><p>Ranked teams · Match stats</p></div><button class="btn btn-glass game-open" data-game="Valorant">Open game ↗</button></article>
+<article class="game-card game-bg-two"><div class="game-symbol">🪂</div><div><span class="game-type">BATTLE ROYALE</span><h3>BGMI</h3><p>Squads · Custom rooms</p></div><button class="btn btn-glass game-open" data-game="BGMI">Open game ↗</button></article>
+<article class="game-card game-bg-three"><div class="game-symbol">🔥</div><div><span class="game-type">BATTLE ROYALE</span><h3>Free Fire</h3><p>Clans · Community cups</p></div><button class="btn btn-glass game-open" data-game="Free Fire">Open game ↗</button></article>
+<article class="game-card game-bg-four"><div class="game-symbol">⛏️</div><div><span class="game-type">SANDBOX</span><h3>Minecraft</h3><p>Servers · Build challenges</p></div><button class="btn btn-glass game-open" data-game="Minecraft">Open game ↗</button></article>
+<article class="game-card game-bg-five"><div class="game-symbol">⚽</div><div><span class="game-type">SPORTS</span><h3>EA SPORTS FC</h3><p>Clubs · Head-to-head</p></div><button class="btn btn-glass game-open" data-game="EA SPORTS FC">Open game ↗</button></article>
+<article class="game-card game-bg-six"><div class="game-symbol">🚗</div><div><span class="game-type">RACING</span><h3>Rocket League</h3><p>Duos · Team leagues</p></div><button class="btn btn-glass game-open" data-game="Rocket League">Open game ↗</button></article>
+</div>
+</section>
+<!-- SERVERS -->
+<section class="page" data-title="Servers" id="servers">
+<div class="page-intro"><div><span class="eyebrow">FIND YOUR PEOPLE</span><h1>Community <span class="gradient-text">servers</span></h1><p>Discord-inspired text channels. Voice and live sync need a backend.</p></div><button class="btn btn-gold" id="createServer">＋ Create server</button></div>
+<div class="server-browser" id="serverBrowser"></div>
+<div class="server-workspace panel">
+<div class="server-channel-list"><div class="server-title"><span class="server-orb purple"></span><strong id="activeServerName">Gaming Hub</strong></div><p class="channel-label">TEXT CHANNELS</p><div id="channelButtons"></div><p class="channel-label">VOICE CHANNELS</p><div class="channel-static">◖ General voice</div><div class="channel-static">◖ Squad room</div></div>
+<div class="server-chat"><div class="chat-top"><div><strong id="activeChannelName"># general</strong><small>Welcome to the community</small></div><span class="live-tag">LOCAL DEMO</span></div><div class="chat-history" id="chatHistory"></div><form class="chat-compose" id="chatForm"><input autocomplete="off" id="chatInput" placeholder="Message #general..."/><button class="btn btn-purple">Send</button></form></div>
+</div>
+</section>
+<!-- TEAMS -->
+<section class="page" data-title="Teams &amp; squads" id="teams">
+<div class="page-intro"><div><span class="eyebrow">WIN AS ONE</span><h1>Teams &amp; <span class="gradient-text">squads</span></h1><p>Build a squad, recruit players and prepare for your next match.</p></div><button class="btn btn-gold" id="createTeam">＋ Create team</button></div>
+<div class="team-grid" id="teamGrid">
+<article class="team-card"><div class="team-emblem">VX</div><div class="team-info"><span class="live-tag">RECRUITING</span><h3>VoidX Esports</h3><p>Valorant · 4 / 5 players</p><div class="team-footer"><span>Diamond division</span><button class="text-link join-team">Request to join ↗</button></div></div></article>
+<article class="team-card"><div class="team-emblem gold-emblem">NX</div><div class="team-info"><span class="live-tag">OPEN</span><h3>Nexus Raiders</h3><p>BGMI · 3 / 4 players</p><div class="team-footer"><span>Platinum division</span><button class="text-link join-team">Request to join ↗</button></div></div></article>
+<article class="team-card"><div class="team-emblem blue-emblem">GG</div><div class="team-info"><span class="live-tag">RECRUITING</span><h3>GG Collective</h3><p>Multi-game · 8 / 10 players</p><div class="team-footer"><span>Gold division</span><button class="text-link join-team">Request to join ↗</button></div></div></article>
+</div>
+</section>
+<!-- TOURNAMENTS -->
+<section class="page" data-title="Tournaments" id="tournaments">
+<div class="page-intro"><div><span class="eyebrow">THE NEXT CHALLENGE</span><h1>Open <span class="gradient-text">tournaments</span></h1><p>Join community competitions and test your skills.</p></div></div>
+<div class="tournament-list">
+<article class="tournament-card"><div class="tournament-date"><b>18</b><span>NOV</span></div><div class="tournament-main"><span class="game-type">BGMI · SQUAD</span><h3>NEXUS Clash Cup</h3><p>16 squads · Community tournament · Demo prize pool</p><div class="progress-track"><span style="width:68%"></span></div><small>11 / 16 squads registered</small></div><div class="tournament-action"><span class="live-tag">REGISTRATION OPEN</span><button class="btn btn-gold register-event">Register squad</button></div></article>
+<article class="tournament-card"><div class="tournament-date purple-date"><b>22</b><span>NOV</span></div><div class="tournament-main"><span class="game-type">VALORANT · 5V5</span><h3>Midnight Protocol</h3><p>8 teams · Single elimination · Demo event</p><div class="progress-track"><span style="width:40%"></span></div><small>4 / 10 teams registered</small></div><div class="tournament-action"><span class="live-tag">REGISTRATION OPEN</span><button class="btn btn-gold register-event">Register team</button></div></article>
+<article class="tournament-card"><div class="tournament-date blue-date"><b>29</b><span>NOV</span></div><div class="tournament-main"><span class="game-type">FREE FIRE · DUO</span><h3>Firestorm Duos</h3><p>32 duos · Points format · Demo event</p><div class="progress-track"><span style="width:25%"></span></div><small>8 / 32 duos registered</small></div><div class="tournament-action"><span class="live-tag">REGISTRATION OPEN</span><button class="btn btn-gold register-event">Register duo</button></div></article>
+</div>
+</section>
+<!-- LEAGUES -->
+<section class="page" data-title="Leagues" id="leagues">
+<div class="page-intro"><div><span class="eyebrow">SEASON 01 · THE AWAKENING</span><h1>Competitive <span class="gradient-text">leagues</span></h1><p>Climb divisions, earn points and prove consistency.</p></div><span class="live-tag">SEASON IN PROGRESS</span></div>
+<div class="league-hero"><div><span class="eyebrow">YOUR CURRENT DIVISION</span><h2>DIAMOND <span>III</span></h2><p>Keep winning to reach the Master division.</p><div class="division-progress"><span style="width:72%"></span></div><small>720 / 1,000 division points</small></div><div class="league-trophy">♛</div></div>
+<div class="stats-grid three"><article class="stat-card"><strong>18</strong><small>Wins this season</small></article><article class="stat-card"><strong>6</strong><small>Losses this season</small></article><article class="stat-card"><strong>75%</strong><small>Win rate</small></article></div>
+<div class="panel"><div class="panel-heading"><div><span class="eyebrow">DIVISION SYSTEM</span><h2>Climb the ladder</h2></div></div><div class="division-list"><span>🥉 Bronze</span><span>🥈 Silver</span><span>🥇 Gold</span><span>💠 Platinum</span><span class="current-division">◆ Diamond III</span><span>👑 Master</span><span>✦ Legend</span></div></div>
+<p class="fine-print">All ranks, points and results shown here are illustrative demo data. Official rankings require verified match results and backend rules.</p>
+</section>
+<!-- LEADERBOARD -->
+<section class="page" data-title="Leaderboard" id="leaderboard">
+<div class="page-intro"><div><span class="eyebrow">HALL OF FAME</span><h1>Player <span class="gradient-text">leaderboard</span></h1><p>Top players ranked by sample season points.</p></div><select class="dark-select" id="leaderboardGame"><option>All games</option><option>BGMI</option><option>Valorant</option><option>Free Fire</option></select></div>
+<div class="podium"><div class="podium-player second"><span>🥈</span><b>ProGamer</b><small>9,200 PTS</small><div class="podium-block">02</div></div><div class="podium-player first"><span>👑</span><b>ShadowX</b><small>9,850 PTS</small><div class="podium-block">01</div></div><div class="podium-player third"><span>🥉</span><b>NightWolf</b><small>8,750 PTS</small><div class="podium-block">03</div></div></div>
+<div class="panel table-panel"><div class="table-scroll"><table><thead><tr><th>RANK</th><th>PLAYER</th><th>GAME</th><th>WINS</th><th>POINTS</th><th>TIER</th></tr></thead><tbody id="leaderboardRows"></tbody></table></div></div>
+</section>
+<!-- FRIENDS -->
+<section class="page" data-title="Friends" id="friends">
+<div class="page-intro"><div><span class="eyebrow">YOUR SQUAD STARTS HERE</span><h1>Find your <span class="gradient-text">people</span></h1><p>Discover players and build your gaming circle.</p></div></div>
+<div class="friend-grid" id="friendGrid">
+<article class="friend-card"><div class="friend-avatar">SX</div><h3>ShadowX</h3><p>Valorant · Diamond</p><span class="friend-status">● Online now</span><button class="btn btn-glass friend-action">Add friend</button></article>
+<article class="friend-card"><div class="friend-avatar pink-avatar">PW</div><h3>PixelWolf</h3><p>BGMI · Platinum</p><span class="friend-status offline">● Away</span><button class="btn btn-glass friend-action">Add friend</button></article>
+<article class="friend-card"><div class="friend-avatar gold-avatar">NG</div><h3>NightGamer</h3><p>Free Fire · Master</p><span class="friend-status">● Online now</span><button class="btn btn-glass friend-action">Add friend</button></article>
+<article class="friend-card"><div class="friend-avatar blue-avatar">AP</div><h3>AstroPlay</h3><p>Minecraft · Builder</p><span class="friend-status offline">● Offline</span><button class="btn btn-glass friend-action">Add friend</button></article>
+</div>
+</section>
+<!-- NOTIFICATIONS -->
+<section class="page" data-title="Notifications" id="notifications">
+<div class="page-intro"><div><span class="eyebrow">DON'T MISS A MOMENT</span><h1>Your <span class="gradient-text">notifications</span></h1><p>Updates from your demo NEXUS activity.</p></div><button class="text-link" id="clearNotifications">Mark all as read</button></div>
+<div class="panel notification-list" id="notificationList"><div class="notification-row"><span class="notice-icon purple-notice">🏆</span><div><strong>Tournament registration is open</strong><p>NEXUS Clash Cup is accepting squads.</p><small>Today · Demo notification</small></div><i class="unread-dot"></i></div><div class="notification-row"><span class="notice-icon gold-notice">♧</span><div><strong>New players are online</strong><p>Find teammates for your next match.</p><small>Yesterday · Demo notification</small></div><i class="unread-dot"></i></div><div class="notification-row"><span class="notice-icon blue-notice">✦</span><div><strong>Welcome to NEXUS</strong><p>Your gaming universe is ready to explore.</p><small>Earlier · Demo notification</small></div></div></div>
+</section>
+<!-- PROFILE -->
+<section class="page" data-title="My profile" id="profile">
+<div class="page-intro"><div><span class="eyebrow">YOUR GAMING IDENTITY</span><h1>Player <span class="gradient-text">profile</span></h1></div><button class="btn btn-gold" id="editProfile">Edit profile</button></div>
+<div class="profile-panel panel"><div class="profile-cover"></div><div class="profile-main"><div class="profile-avatar" id="profileAvatar">N</div><div><h2 id="profileDisplayName">NEXUS Player</h2><p>@nexus_player · <span class="friend-status">● Demo account</span></p></div><span class="rank-pill">💎 DIAMOND III</span></div><p class="profile-bio" id="profileBio">Gaming enthusiast. Here to meet great teammates, share highlights and compete.</p><div class="profile-stats"><div><strong>2,450</strong><small>XP</small></div><div><strong>18</strong><small>Wins</small></div><div><strong>75%</strong><small>Win rate</small></div><div><strong>128</strong><small>Global rank</small></div></div></div>
+<div class="panel profile-games"><div class="panel-heading"><div><span class="eyebrow">FAVOURITES</span><h2>My games</h2></div></div><div class="favorite-games"><span>🎯 Valorant</span><span>🪂 BGMI</span><span>⛏️ Minecraft</span></div></div>
+</section>
+<!-- SETTINGS -->
+<section class="page" data-title="Settings" id="settings">
+<div class="page-intro"><div><span class="eyebrow">MAKE NEXUS YOURS</span><h1>Account <span class="gradient-text">settings</span></h1><p>Personalise your local demo experience.</p></div></div>
+<div class="settings-layout"><div class="panel settings-panel"><h2>Profile details</h2><label class="form-label">Display name<input id="settingsName" maxlength="24" type="text" value="NEXUS Player"/></label><label class="form-label">Short bio<textarea id="settingsBio" rows="3">Gaming enthusiast. Here to meet great teammates, share highlights and compete.</textarea></label><button class="btn btn-gold" id="saveSettings">Save changes</button></div><div class="panel settings-panel"><h2>Demo data</h2><p class="muted">This prototype stores a few preferences and demo posts in this browser. It does not create a secure account or sync data with other users.</p><button class="btn btn-danger" id="resetDemo">Reset local demo data</button></div><div class="panel settings-panel"><h2>Future integrations</h2><div class="integration-row"><span>Firebase Authentication</span><span class="status-soon">Not connected</span></div><div class="integration-row"><span>Cloud Firestore</span><span class="status-soon">Not connected</span></div><div class="integration-row"><span>Firebase Storage</span><span class="status-soon">Not connected</span></div><div class="integration-row"><span>Voice / live chat service</span><span class="status-soon">Not connected</span></div></div></div>
+</section>
+<footer class="site-footer"><span>© 2026 NEXUS Community</span><span>Connect <b>·</b> Compete <b>·</b> Conquer</span></footer>
+</div>
+</main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("section.page").forEach(function(section) {
+        section.classList.toggle("active", section.id === "gallery");
+      });
+      var title = document.getElementById("pageTitle");
+      if (title) title.textContent = 'Gallery';
+    });</script><script src="script.js"></script>
+</body>
+</html>
